@@ -1,7 +1,14 @@
-p{
+
+
+h1{
     color:red;
-    font-family:sans-serif;
-    font-size: 20px;
+    font-family: cursive;
+    font-size: 60px;
 }
 
 
+h6{
+    color:blue;
+    font-family:sans-serif;
+    font-size: 10px;
+}
