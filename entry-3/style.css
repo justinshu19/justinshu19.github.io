@@ -1,0 +1,255 @@
+<style>
+  /* Question 1 - Color one word */
+  .color-text span {
+    color: red;
+    font-weight: bold; /* To make the color more visible */
+  }
+
+  /* Question 2 - Rainbow text */
+  .rainbow {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px; /* Increased font for visual effect */
+  }
+
+  /* Question 3 - Highlight yellow background */
+  .highlight-me {
+    background-color: yellow;
+    padding: 5px; /* Add padding for better visual presentation */
+    border-radius: 3px; /* Smooth corners */
+  }
+
+  /* Question 5 - Side-by-side divs */
+  .side-by-side {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    margin-right: 5px; /* Add space between the boxes */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Add subtle shadow */
+  }
+
+  /* Question 6 - Make div disappear */
+  .gone {
+    display: none;
+  }
+
+  /* Question 7 - Increase padding (orange background) */
+  .increase-orange {
+    padding: 20px;
+    background-color: orange;
+    border-radius: 10px; /* Add rounded corners */
+    color: white; /* Make text stand out */
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3); /* Add shadow for depth */
+  }
+
+  /* Question 8 - Separate divs */
+  .separate-me {
+    margin-bottom: 10px;
+    background-color: lightgray;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add subtle border */
+  }
+
+  /* Question 9 - User-friendly buttons */
+  .user-friendly {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Add smooth hover effect */
+  }
+
+  .user-friendly:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+
+  /* Question 10 - Vertically center text in square */
+  .static {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Question 11 - Move div 50px left and upward */
+  .left-upward {
+    position: relative;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* Shadow effect */
+  }
+
+  /* Question 12 - Fixed button 10px from top and right */
+  .fixed-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: lightcoral;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    color: white;
+    font-weight: bold;
+  }
+
+  /* Question 13 - Position properties */
+  .position-20-40 {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* Add some depth */
+  }
+
+  /* Question 14 - Move blue div without affecting others */
+  .move-me {
+    position: relative;
+    top: -30px;
+    left: -30px;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  /* Question 15 - Inline-block behavior */
+  .dont-move, .move-me {
+    display: inline-block;
+  }
+
+  /* Question 16 - Center small square in larger square */
+  .larger-div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .smaller-div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+  }
+
+  /* Question 17 - Bottom-left, top-right, and center */
+  .parent-div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+  }
+
+  .child-div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 5px;
+  }
+
+  /* Move the div to the bottom left corner */
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  /* Move the div to the top right corner */
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+
+  /* Center the div inside the grey box */
+  .centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Question 18 - Horizontal stripes */
+  .horizontal-stripes {
+    background: repeating-linear-gradient(0deg, red, red 10px, white 10px, white 20px);
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2); /* Add shadow for depth */
+  }
+
+  /* Question 19 - Vertical stripes */
+  .vertical-stripes {
+    background: repeating-linear-gradient(90deg, red, red 10px, white 10px, white 20px);
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Question 20 - Replicate squares */
+  .replicate-me {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* Add shadow to box */
+  }
+
+  .red-square, .pink-square, .yellow-square, .green-square, .blue-square {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .red-square { background-color: red; top: 10px; left: 10px; }
+  .pink-square { background-color: pink; top: 10px; right: 10px; }
+  .yellow-square { background-color: yellow; bottom: 10px; left: 10px; }
+  .green-square { background-color: green; bottom: 10px; right: 10px; }
+  .blue-square { background-color: blue; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+</style>
+
+<!-- Question 1 -->
+<p class="color-text">1. Turn one word in this <span>sentence</span> to a color.</p>
+
+<!-- Question 2 -->
+<p>2. Make this word rainbow colored: <span class="rainbow">Magic</span></p>
+
+<!-- Question 3 -->
+<p>3. Highlight the following text by giving it a yellow background:</p>
+<div class="highlight-me">Highlight me!</div>
+
+<!-- Question 4 -->
+<p>4. Did your work in question 3 alter the following text? If so, why did it get altered? What's different about it?</p>
+<span class="highlight-me">Highlight me!</span>
+
+<!-- Question 5 -->
+<p>5. Make these divs appear side-by-side by adding one line in css. Why is
