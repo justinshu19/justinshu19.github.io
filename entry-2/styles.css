@@ -1,156 +1,50 @@
-/* General body styling */
+
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fafafa;
-    color: #2c3e50;
-    line-height: 1.6;
-}
-
-/* Styling for main container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
     padding: 20px;
 }
 
-/* Styling for headers */
-h1 {
-    font-size: 48px;
-    font-family: 'Merriweather', serif;
-    color: #34495e;
+header h1 {
+    color: black;
     text-align: center;
-    margin: 40px 0 20px;
-    letter-spacing: 2px;
-    border-bottom: 3px solid #2980b9;
-    padding-bottom: 20px;
+    margin-bottom: 5px;
 }
 
-h4, h5, h6 {
-    color: #2c3e50;
+section h2 {
+    font-size: 1.8em;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
 }
 
-h5 {
-    font-size: 22px;
-    font-family: 'Merriweather', serif;
-    line-height: 1.8;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-}
-
-h6 {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+header h6 {
+    text-align: center;
+    color: #666;
     font-style: italic;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #7f8c8d;
 }
 
-/* Add background color and padding to headers */
-h1, h4, h5, h6 {
-    background-color: #ecf0f1;
-    padding: 15px 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+section {
+    margin-bottom: 20px;
 }
 
-/* Specific styling for subheadings */
-h4 {
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #2980b9;
-    padding-top: 25px;
+section p {
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
 }
 
-/* Paragraph and list spacing */
-p, li {
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 18px;
+article h3 {
+    color: #4a4a4a;
+    margin: 15px 0 8px;
 }
 
-/* Styling for lists */
-ul, ol {
-    margin: 20px;
-    padding: 15px;
-    background-color: #f5f5f5;
-    border-left: 5px solid #2980b9;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+article p {
+    color: black;
+    margin: 10px 0;
 }
 
-li {
-    padding: 8px 0;
-    font-size: 18px;
-}
-
-/* Hover effect on list items */
-li:hover {
-    background-color: #ecf0f1;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-/* Link styling */
-a {
-    color: #2980b9;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #1abc9c;
-    text-decoration: underline;
-}
-
-/* Adding a callout box for important content */
-.callout {
-    background-color: #f9f9f9;
-    border-left: 4px solid #1abc9c;
-    margin: 20px 0;
-    padding: 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.callout p {
-    margin: 0;
-}
-
-/* Styling for footer or small text */
-footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-    background-color: #34495e;
-    color: #ecf0f1;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-    h1 {
-        font-size: 32px;
-    }
-    h4 {
-        font-size: 22px;
-    }
-    h5 {
-        font-size: 18px;
-    }
-    ul, ol {
-        padding: 10px;
-    }
-}

@@ -1,96 +1,50 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Set up font styles */
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
     padding: 20px;
-}
-
-/* Header styling */
-header {
-    background-color: #444;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
 }
 
 header h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff6347; /* Tomato color for hover effect */
-}
-
-/* Section styling */
-section {
-    margin: 30px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 section h2 {
-    font-family: 'Merriweather', serif;
-    color: #444;
+    font-size: 1.8em;
+    color: #2a2a2a;
     margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+header h6 {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 section p {
-    margin-bottom: 15px;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+article h3 {
+    color: #4a4a4a;
+    margin: 15px 0 8px;
 }
 
-footer a {
-    color: #ff6347;
-    text-decoration: none;
+article p {
+    color: black;
+    margin: 10px 0;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-}
