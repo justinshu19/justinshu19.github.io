@@ -1,0 +1,12 @@
+resized-image {
+    width: 300px;
+    height: auto;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 3;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
